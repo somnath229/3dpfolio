@@ -1,4 +1,4 @@
-#🌌React 3D Motion — Interactive 3D Experience with React, Three.js & React Motion
+#🌌React 3D Motion — Interactive 3D portfolio with React, Three.js & React Motion
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -12,7 +12,7 @@ It integrates **Three.js** for powerful 3D rendering and **React Motion** for sm
 
 ```bash
 git clone https://github.com/your-username/react-3d-motion.git
-cd react-3d-motion
+cd 3dpfolio
 ```
 
 ### 2. Install Dependencies
@@ -85,12 +85,13 @@ react-3d-motion/
 │
 ├── public/
 │   └── index.html
+│   └── asseted
 │
 ├── src/
 │   ├── components/
-│   │   ├── Scene.js
-│   │   ├── MotionWrapper.js
-│   │   └── ...
+│   │   ├── Main.js
+│   │   ├── Navbar.js
+│   │   └── Projects.js
 │   ├── assets/
 │   ├── App.js
 │   ├── index.js
