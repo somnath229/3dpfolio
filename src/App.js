@@ -6,7 +6,6 @@ import Theme from "./components/Theme";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
-import Game from "./components/Game";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";

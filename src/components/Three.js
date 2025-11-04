@@ -17,7 +17,7 @@ export default function Three() {
             <Astronaut scale={0.23} position={[0, -1.5, 0]} />
           </Float>
         </Suspense>
-        {/* <OrbitControls /> */}
+        <OrbitControls />
       </Canvas>
     </div>
   );
