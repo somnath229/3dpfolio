@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'lato';
+}
+
+.font {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  text-shadow: black;
+}
+
+
+.btnSkills {
+  padding: .5rem 1rem;
+  margin: 0 1rem;
+  background: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+/* small screen */
+@media (max-width: 768px) {
+  .language {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 55%;
+  }
+ 
+}
+
+/* large screen */
+@media (min-width: 768px) {
+  .formdiv {
+    justify-content: space-around;
+  }
+
+  .form {
+    width: 30%;
+  }
+.box-c {
+  width: 30%;
+}
+ 
+}
+
+
+/* line with circle */
+.line-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle-p {
+  width: 30px;
+  height: 30px;
+  background-color: #800080;
+  border-radius: 100%;
+  /* background-color: #282c34; */
+  /* font-size: calc(10px + 2vmin); */
+}
+
+.line-p {
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#800080, transparent);
+
+}
+
+.text-p {
+  color: #71717b;
+  font-weight: 800;
+}
+
+/* logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* default react */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Game */
+.game-container {
+  position: relative;
+  width: 90%;
+  height: 10rem;
+  overflow: hidden;
+  background: #fff;
+  outline: none;
+}
+
+.dinosaur {
+  position: absolute;
+  bottom: 5px;
+  left: 2rem;
+  /* src: url(./assets/Dino.jpeg); */
+  /* border:"2px solid black"; */
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  /* border-radius: 10px; */
+}
+
+.dinosaur.ducking {
+  width: 60px;
+  height: 50px;
+  bottom: 80px;
+}
+
+.obstacle {
+  position: absolute;
+  bottom: 5px;
+  width: 40px;
+  height: 60px;
+  background-color: #333;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #555;
+}
+
+.score {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+.game-over {
+  position: absolute;
+  top: 40%;
+  right: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gbutton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Game over */
