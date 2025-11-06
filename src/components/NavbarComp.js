@@ -39,45 +39,53 @@ export default function NavbarComp({
             listStyle: "none",
             cursor: "pointer",
             fontWeight: "700",
-            textAlign:"center"
+            textAlign: "center",
+            gap: "2rem",
           }}>
-          <li
-            onClick={handleNavigate}
-            style={{
-              paddingRight: "2rem", 
-             
-            }}>
-            Home
-          </li>
-          <li
-            onClick={!home ? handleNavigate : onAboutclick}
-            style={{
-              paddingRight: "2rem", 
-            }}>
-            About
-          </li>
-          <li
-            onClick={handleNavigateP}
-            style={{
-              paddingRight: "2rem", 
-            }}>
-            Projects
-          </li>
-          <li
-            onClick={!home ? handleNavigate : onContactclick}
-            style={{
-              paddingRight: "2rem", 
-            }}>
-            Contact
-          </li>
           <a
-            href="http://"
-            target="_blank"
+            href="#"
             style={{
-              paddingRight: "2rem", 
-              color: "white",
-            }}>
-            <li>Resume</li>
+              color: "#cbd5e1",
+              textDecoration: "none",
+            }}
+            onClick={handleNavigate}>
+            Home
+          </a>
+          <a
+            // href="#"
+            style={{
+              color: "#cbd5e1",
+              textDecoration: "none",
+            }}
+            onClick={!home ? handleNavigate : onAboutclick}>
+            About
+          </a>
+          <a
+            href="#"
+            style={{
+              color: "#cbd5e1",
+              textDecoration: "none",
+            }}
+            onClick={handleNavigateP}>
+            Projects
+          </a>
+          <a
+            // href="#"
+            style={{
+              color: "#cbd5e1",
+              textDecoration: "none",
+            }}
+            onClick={!home ? handleNavigate : onContactclick}>
+            Contact
+          </a>
+          <a
+            href="#"
+            style={{
+              color: "#3b82f6",
+              textDecoration: "none",
+            }}
+            target="_blank">
+            Resume
           </a>
         </NavItem>
       </div>

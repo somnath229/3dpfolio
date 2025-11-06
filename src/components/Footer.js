@@ -20,15 +20,16 @@ export default function Footer({ color }) {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          color: "#64748b",
         }}>
+        <div className="date">
+          <h3>&copy; {dateN}</h3>
+        </div>
         <div className="name">
           <h3>
             Somnath Dubey &nbsp;
             <FontAwesomeIcon icon={faHeart} color="red" shake />
           </h3>
-        </div>
-        <div className="date">
-          <h3>&copy; {dateN}</h3>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import About from "./About";
 import Project from "./Project";
 import Three from "./Three";
 import Contact from "./Contact";
+import Contactnew from "./Contactnew";
 import "../App.css";
 
 export default function Layout({ color, aboutRef, contactRef, setHome }) {
@@ -24,7 +25,8 @@ export default function Layout({ color, aboutRef, contactRef, setHome }) {
       <Project color={color} setHome={setHome} />
       <Three />
       <div ref={contactRef} className="flex" style={{ width: "100%" }}>
-        <Contact color={color} />
+        {/* <Contact color={color} /> */}
+        <Contactnew/>
       </div>
     </div>
   );

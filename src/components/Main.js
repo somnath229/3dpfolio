@@ -29,12 +29,11 @@ export default function Main({ color }) {
   return (
     <div
       style={{
-        top: "14rem",
         width: "80%",
         height: "100%",
         color: color.text,
-        padding: "4rem 2rem",
-        marginTop: "10rem",
+        padding: "2rem 2rem",
+        marginTop: "8rem",
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",

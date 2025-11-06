@@ -2,20 +2,19 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
-  faTwitter,
   faFacebookF,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faUser, faHeart, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import '../App.css'
+import "../App.css";
+import Theme from "./Theme";
 
-export default function Social({ color }) {
+export default function Social({ color, setColor, setWhite, white }) {
   return (
     <div className="flex">
       <div
+        className="flex"
         style={{
-          display: "block",
           position: "fixed",
           bottom: "1rem",
           zIndex: "900",
@@ -26,10 +25,10 @@ export default function Social({ color }) {
           boxShadow: "0 4px 6px rgba(0,0,0,0.8)",
           cursor: "pointer",
         }}>
-        <a href="http://" target="_blank">
+        <a href="http://github.com/somnath229/" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="2x" color="white" />
         </a>
-        <a href="http://" target="_blank">
+        <a href="http://linkedin.com/in/somnathdubey" target="_blank">
           <FontAwesomeIcon
             icon={faLinkedin}
             size="2x"
@@ -37,22 +36,20 @@ export default function Social({ color }) {
             style={{ padding: "0 1rem" }}
           />
         </a>
-        <a href="http://google.com" target="_blank">
-          <FontAwesomeIcon icon={faInstagram} size="2x" color="white" />
-        </a>
+        <div>
+          <Theme setColor={setColor} setWhite={setWhite} white={white} />
+        </div>
         <a href="http://" target="_blank">
           <FontAwesomeIcon
-            icon={faFacebookF}
+            icon={faInstagram}
             size="2x"
             color="white"
             style={{ padding: "0 1rem" }}
           />
         </a>
         <a href="http://" target="_blank">
-          <FontAwesomeIcon icon={faEnvelope} size="2x" color="white" />
+          <FontAwesomeIcon icon={faFacebookF} size="2x" color="white" />
         </a>
-
-        {/* <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} /> */}
       </div>
     </div>
   );

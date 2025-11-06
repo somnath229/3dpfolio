@@ -7,6 +7,7 @@ export default function ProjectNew({ color }) {
   return (
     <div
       style={{
+        width:"80%",
         height: "100%",
         background: color.background,
         color: color.text,

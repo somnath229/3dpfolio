@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import ProjectNew from "./components/ProjectNew";
-import Theme from "./components/Theme";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
@@ -31,7 +30,6 @@ function App() {
         background: color.background,
       }}>
       <Router>
-        <Theme setColor={setColor} setWhite={setWhite} white={white} />
 
         <Navbar
           color={color}
@@ -56,10 +54,15 @@ function App() {
           <Route path="/projects" element={<ProjectNew color={color} />} />
         </Routes>
         <div style={{ fontSize: "24px", color: "#6e8efb" }}>
-          <FontAwesomeIcon icon={faCoffee} bounce/> Enjoy your coffee!
+          <FontAwesomeIcon icon={faCoffee} bounce /> Enjoy your coffee!
         </div>
         <Footer color={color} />
-        <Social color={color} />
+        <Social
+          color={color}
+          setColor={setColor}
+          setWhite={setWhite}
+          white={white}
+        />
       </Router>
     </div>
   );

@@ -3,7 +3,12 @@ import NavbarComp from "./NavbarComp";
 import "../App.css";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faHeart, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faHeart,
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavItem = styled.div`
   @media (max-width: 768px) {
@@ -37,7 +42,7 @@ export default function Navbar({
         position: "fixed",
         top: "0",
         zIndex: "1000",
-        boxShadow: "0 4px 6px rgba(0,0,0,0.8)",
+        boxShadow: "0 4px 6px rgba(0,0,0,0.5)",
       }}>
       <div
         className="name"
@@ -47,7 +52,18 @@ export default function Navbar({
           width: "30%",
         }}>
         <FontAwesomeIcon icon={faUser} size="2x" />
-        <h2 style={{ padding: "1rem" }}>Somnath</h2>
+        <h2>
+          <a
+            href="#"
+            style={{
+              fontWeight: "bold",
+              color: "#fff",
+              textDecoration: "none",
+              padding: "1rem",
+            }}>
+            Somnath
+          </a>
+        </h2>
       </div>
       <div
         className="ham"
@@ -80,7 +96,7 @@ export default function Navbar({
           ) : (
             <div>
               <h1>
-                <FontAwesomeIcon icon={faXmark} spin/>
+                <FontAwesomeIcon icon={faXmark} shake/>
               </h1>
             </div>
           )}

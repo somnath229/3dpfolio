@@ -37,7 +37,7 @@ export default function About({ color }) {
         <div>
           <h1>About Me</h1>
         </div>
-        <div>
+        <div style={{ color: "#71717b" }}>
           <h4>
             Hi, I'm &nbsp;
             <span style={{ color: "blue", letterSpacing: "1px" }}>
