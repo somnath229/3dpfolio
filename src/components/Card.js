@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { motion, scale, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import "../App.css";
 
@@ -28,26 +28,30 @@ export default function Card({ projects, color }) {
               initial={{ opacity: 0, x: fromLeft ? 100 : 100 }}
               animate={{
                 opacity: isInView ? 1 : 0,
-                x: isInView ? 0 : fromLeft ? -100 : -100,
+                x: isInView ? 0 : fromLeft ? -150 : -150,
               }}
               transition={{
-                duration: 2,
-                ease: "easeOut",
+                duration: 3,
+                ease: "easeInOut",
               }}
               className="box-c"
               style={{
-                // width: "30%",  //large screen
                 height: "100%",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 flexDirection: "column",
-                border: "2px solid",
-                borderColor: color.text,
+                // border: "2px solid",
+                // borderColor: color.text,
                 borderRadius: "1rem",
                 margin: "1rem",
                 overflow: "hidden",
-                boxShadow: "rgba(0, 0, 0, 0.8) 22px 23px 18px",
+                boxShadow: "rgba(0, 0, 0, 0.8) 2px 3px 8px",
+
+                background: "rgba(255, 255, 255, 0.05)", // transparent white overlay
+                backdropFilter: "blur(10px)", // blur for glass effect
+                WebkitBackdropFilter: "blur(10px)", // for Safari
+                border: "1px solid rgba(255, 255, 255, 0.1)", // subtle border
               }}>
               <div>
                 <Tilt glareColor={"red"}>
@@ -94,7 +98,6 @@ export default function Card({ projects, color }) {
                           color: color.text,
                         }}>
                         {tech}
-                        {/* <img src={html} alt="" srcset="" style={{width:"5%"}} /> */}
                       </button>
                     ))}
                   </div>

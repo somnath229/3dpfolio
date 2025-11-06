@@ -1,6 +1,5 @@
 import React from "react";
 import TextSpan from "./TextSpan";
-import man from "../assets/profile1.png";
 import bg from "../assets/gradient.png";
 import "../App.css";
 import styled from "styled-components";

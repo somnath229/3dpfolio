@@ -4,10 +4,7 @@ import Card from "./Card";
 import projects from "../assets/textUtils";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeart,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Project({ color, setHome }) {
   const navigate = useNavigate();
@@ -34,14 +31,6 @@ export default function Project({ color, setHome }) {
       }}>
       <div className="">
         <div className="flex" style={{ alignItems: "flex-start" }}>
-          {/* <div>
-          <h1 style={{ color: "#800080" }}>
-            Featured Project <FontAwesomeIcon icon={faRocket} shake />
-          </h1>
-        <h4 style={{ color: "#71717b" }}>
-          Built with moder tech & clean design
-        </h4>
-        </div> */}
           <div className="line-p">
             <div className="circle-p" />
             <div className="line-p" />
@@ -66,9 +55,17 @@ export default function Project({ color, setHome }) {
         <Card projects={projects} color={color} />
       </div>
       <div className="more">
-        <h4 onClick={handleNavigate} style={{ cursor: "pointer" }}>
-          View More Projects <FontAwesomeIcon icon={faArrowRight} shake />
-        </h4>
+        <a
+          href="#"
+          style={{
+            color: color.text,
+            textDecoration: "none",
+          }}
+          onClick={handleNavigate}>
+          <h4>
+            View More Projects <FontAwesomeIcon icon={faArrowRight} shake />
+          </h4>
+        </a>
       </div>
     </div>
   );

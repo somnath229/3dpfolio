@@ -79,12 +79,13 @@ export default function NavbarComp({
             Contact
           </a>
           <a
-            href="#"
+            href="https://drive.google.com/file/d/15Sn3wiaDbmXIk0elOifJbHyLDtSRs6hn/view?usp=sharing"
             style={{
               color: "#3b82f6",
               textDecoration: "none",
             }}
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             Resume
           </a>
         </NavItem>

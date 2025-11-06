@@ -3,7 +3,6 @@ import Main from "./Main";
 import About from "./About";
 import Project from "./Project";
 import Three from "./Three";
-import Contact from "./Contact";
 import Contactnew from "./Contactnew";
 import "../App.css";
 

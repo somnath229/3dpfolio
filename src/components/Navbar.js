@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
-  faHeart,
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
@@ -54,7 +53,7 @@ export default function Navbar({
         <FontAwesomeIcon icon={faUser} size="2x" />
         <h2>
           <a
-            href="#"
+            href="/"
             style={{
               fontWeight: "bold",
               color: "#fff",

@@ -7,7 +7,7 @@ export default function ProjectNew({ color }) {
   return (
     <div
       style={{
-        width:"80%",
+        width: "80%",
         height: "100%",
         background: color.background,
         color: color.text,
@@ -21,13 +21,13 @@ export default function ProjectNew({ color }) {
       }}>
       <div>
         <h1 style={{ color: "#800080" }}>
-          Featured Project <FontAwesomeIcon icon={faRocket} shake />
+          Code & Creations <FontAwesomeIcon icon={faRocket} shake />
         </h1>
 
         <span className="text-p">
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          A curated selection of my projects. Dive in and see what I've been
+          building with passion and precision. Each project is briefly described
+          with links to code repositories and live demos in it. It reflects my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </span>
