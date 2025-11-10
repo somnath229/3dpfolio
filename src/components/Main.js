@@ -8,7 +8,7 @@ import Three from "./Three";
 
 const ImgItem = styled.div`
   @media (max-width: 768px) {
-    display: none;
+    flex-direction :column;
   }
 `;
 const DivItem = styled.div`
@@ -41,18 +41,18 @@ export default function Main({ color }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
-        <div
+        <ImgItem
           style={{
             width: "100%",
             height: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-evenly",
+            flex:"1"
           }}>
-          <div style={{}}>
+          <div style={{ }}>
             <div>
               <div
-                // className="name font"
                 style={{
                   fontSize: "3rem",
                   paddingTop: "1rem 0",
@@ -104,14 +104,11 @@ export default function Main({ color }) {
               ))}
             </div>
           </div>
-          <ImgItem
-            style={{
-              width: "40%",
-            }}
+          <DivItem
             className="pic3DD">
             <Three />
-          </ImgItem>
-        </div>
+          </DivItem>
+        </ImgItem>
       </motion.div>
     </div>
   );

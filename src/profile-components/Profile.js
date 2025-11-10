@@ -193,7 +193,7 @@ export default function Profile() {
           <div style={styles.breadcrumb}>{current.breadcrumb}</div>
           <div style={styles.sectionTitle}>{current.title}</div>
           <div style={styles.sectionSubtitle}>{current.subtitle}</div>
-          <div style={{width:"100%"}}>{current.page}</div>
+          <div style={{ width: "100%" }}>{current.page}</div>
 
           {/* {activePage === "Profile" && (to only show profile )} */}
         </div>

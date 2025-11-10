@@ -5,6 +5,7 @@ import ProjectNew from "./components/ProjectNew";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
+import LogIn from "./profile-components/LogIn";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
@@ -30,7 +31,6 @@ function App() {
         background: color.background,
       }}>
       <Router>
-
         <Navbar
           color={color}
           onAboutclick={() => scrollToSection(aboutRef)}
@@ -52,6 +52,7 @@ function App() {
             }
           />
           <Route path="/projects" element={<ProjectNew color={color} />} />
+          <Route path="/login" element={<LogIn />} />
         </Routes>
         <div style={{ fontSize: "24px", color: "#6e8efb" }}>
           <FontAwesomeIcon icon={faCoffee} bounce /> Enjoy your coffee!

@@ -5,7 +5,7 @@ import pic from "../assets/herobg.png";
 
 const NavItem = styled.div`
   @media (min-width: 768px) {
-    width: 80%;
+    width: 90%;
   }
 `;
 export default function Contactnew() {
