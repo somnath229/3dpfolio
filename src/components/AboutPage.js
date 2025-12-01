@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const DivItem = styled.div`
   @media (max-width: 768px) {
-    flex-direction:column;
+    flex-direction: column;
   }
 `;
 export default function AboutPage({ color }) {
@@ -69,23 +69,27 @@ export default function AboutPage({ color }) {
                 <FontAwesomeIcon icon={faUserGraduate} size="2x" />
               </div>
               <div style={styles.itemText}>
-                <span style={styles.itemTitle}>M.S. in Computer Science</span>
+                <span style={styles.itemTitle}>
+                  B.Tech. in Computer Science & Engineering
+                </span>
                 <p style={styles.itemSubtitle}>
-                  University of Technology | 2016 - 2018
+                  8.0 cgpa | Jharkhand University of Technology | 2019 - 2023
                 </p>
               </div>
             </div>
-            <div style={styles.itemRow}>
+            {/* <div style={styles.itemRow}>
               <div style={styles.iconBox}>
                 <FontAwesomeIcon icon={faUserGraduate} size="2x" />
               </div>
               <div style={styles.itemText}>
-                <span style={styles.itemTitle}>M.S. in Computer Science</span>
+                <span style={styles.itemTitle}>
+                  B.Tech. in Computer Science
+                </span>
                 <p style={styles.itemSubtitle}>
-                  University of Technology | 2016 - 2018
+                  Jharkhand University of Technology | 2019 - 2023
                 </p>
               </div>
-            </div>
+            </div> */}
           </section>
           {/* Professional Experience */}
           <section style={styles.section}>
@@ -96,9 +100,9 @@ export default function AboutPage({ color }) {
                 <FontAwesomeIcon icon={faBriefcase} size="2x" />
               </div>
               <div style={styles.itemText}>
-                <span style={styles.itemTitle}>Senior Software Engineer</span>
+                <span style={styles.itemTitle}>Intern. FrontEnd Developer</span>
                 <p style={styles.itemSubtitle}>
-                  Tech Company Inc. | 2021 - Present
+                  FlexGen Company Inc. | April, 2023 - Oct, 2023
                 </p>
               </div>
             </div>

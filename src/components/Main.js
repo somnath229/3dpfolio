@@ -21,7 +21,7 @@ export default function Main({ color }) {
     "Open to opportunities",
     "Remote Work",
     "Freelance",
-    "collaborate",
+    "Collaborate",
     "Explore",
   ];
 

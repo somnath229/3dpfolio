@@ -1,6 +1,6 @@
 import React from "react";
 import Profile from "./Profile";
-import Space from "./Space";
+import Parking from "./Parking";
 import SpaceNew from "./SpaceNew";
 
 export default function LogIn() {
@@ -12,8 +12,8 @@ export default function LogIn() {
       </div>
       <div className="threed">
         {" "}
+        <Parking />
         {/* <Space /> */}
-        {/* <SpaceThree /> */}
         <SpaceNew />
       </div>
     </div>
