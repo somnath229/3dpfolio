@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import styled from "styled-components";
 import pic from "../assets/herobg.png";
+import styled from "styled-components";
 
 const NavItem = styled.div`
   @media (min-width: 768px) {

@@ -1,5 +1,20 @@
 import react, {useRef} from 'react'
 import bgVideo from "../assets/bg.mp4"
+import styled from "styled-components";
+
+const HItem = styled.h1`
+  @media (max-width: 768px) {
+    font-size: 2rem
+  }
+`;
+const DivItem = styled.div`
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+`;
 
 export default function VideoText() {
   const wrapperStyle = {
@@ -12,14 +27,14 @@ export default function VideoText() {
     alignItems: "center",
     overflow: "hidden",
     borderRadius: "1rem",
-    padding: "2rem",
+    // padding: "2rem",
     opacity: "0.8",
   };
 
   const videoStyle = {
     position: "absolute",
-    width: "120%",
-    height: "120%",
+    width: "100%",
+    height: "100%",
     objectFit: "cover",
     top: "50%",
     left: "50%",
@@ -29,23 +44,23 @@ export default function VideoText() {
 
   const textStyle = {
     position: "relative",
-    fontSize: "4rem",
+    fontSize: "3rem",
     fontWeight: "900",
     textTransform: "uppercase",
-    letterSpacing: "10px",
+    letterSpacing: "5px",
     color: "white",
     zIndex: "1",
   }; 
 
   return (
-    <div style={wrapperStyle}>
+    <DivItem style={wrapperStyle}>
       {/* The video behind the text mask */}
       <video autoPlay muted loop playsInline style={videoStyle}>
         <source src={bgVideo} type="video/mp4" />
       </video>
 
       {/* Text that clips the video */}
-      <h1 style={textStyle}> Let’s Build Something Together</h1>
-    </div>
+      <HItem style={textStyle}> Let’s Build Something Together</HItem>
+    </DivItem>
   );
 }
