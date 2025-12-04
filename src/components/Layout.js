@@ -2,7 +2,7 @@ import React from "react";
 import Main from "./Main";
 import About from "./About";
 import Project from "./Project";
-import SpaceThree from "./SpaceThree";
+import VedioText from "./VedioText";
 import Contactnew from "./Contactnew";
 import "../App.css";
 
@@ -22,7 +22,7 @@ export default function Layout({ color, aboutRef, contactRef, setHome }) {
       </div>
 
       <Project color={color} setHome={setHome} />
-      <SpaceThree />
+      <VedioText />
       <div ref={contactRef} className="flex" style={{ width: "100%" }}>
         <Contactnew />
       </div>

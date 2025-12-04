@@ -38,14 +38,14 @@ export default function Contactnew() {
           borderRadius: "10px",
         }}>
         <div style={{ margin: "2rem auto" }}>
-          <h1
+          {/* <h1
             style={{
               fontSize: "3rem",
               fontWeight: "700",
               marginBottom: "1rem",
             }}>
             Let’s Build Something Together
-          </h1>
+          </h1> */}
           <p style={{ color: "#94a3b8", marginBottom: "4rem" }}>
             Have a project in mind or just want to connect? <br /> Drop me a
             message below or reach out through my socials.
